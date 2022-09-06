@@ -92,6 +92,7 @@ ul {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 
@@ -146,7 +147,6 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondary-text-color);
 transition: color var(--transition-dur-and-func);
-transition-timing-function: var(--transition-timing);
 position: relative;
 display: inline-block;
 padding-bottom: 32px;
@@ -187,11 +187,9 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--primary-text-color-theme-light);
-fill: currentColor;
 display: flex;
 align-items: center;
 transition: color var(--transition-dur-and-func);
-transition-timing-function: var(--transition-timing)
 }
 
 
@@ -411,7 +409,6 @@ text-align: center;
 .social-list-icon {
   fill: var(--icon-color);
   transition: fill var(--transition-dur-and-func);
-  transition-timing-function: var(--transition-timing); 
 }
 
 .social-list {
@@ -429,7 +426,6 @@ text-align: center;
   border-radius: 50%;
   background-color: var(--primary-text-color);
   transition: background-color var(--transition-dur-and-func);
-  transition-timing-function: var(--transition-timing); 
 }
 
 .social-list-link:hover,
@@ -476,16 +472,18 @@ margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--icon-color);
-  transition: var(--transition-dur-and-func);
-  transition-timing-function: var(--transition-timing) 
+  color: var(--icon-color);
+  transition: color var(--transition-dur-and-func);
+  transition: border-color var(--transition-dur-and-func);
 }
 
 
 .clients-icon-box:hover,
 .clients-icon-box:focus {
-  fill: var(--secondary-text-color-theme-light);
+  color: var(--secondary-text-color-theme-light);
   border-color: var(--secondary-text-color-theme-light);
+  transition: color var(--transition-dur-and-func);
+  transition: border-color var(--transition-dur-and-func);
 }
 
 
@@ -498,6 +496,7 @@ margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: currentColor;
 }
 
 
@@ -602,7 +601,7 @@ color: var(--primary-text-color);
 }
 
 .social-list-link-footer:hover,
-.social-list-link-footer:focus {
+.social-lisclients-icon-boxt-link-footer:focus {
   background-color: var(--secondary-text-color-theme-light);
 }
 
@@ -622,7 +621,8 @@ border: none;
 padding: 6px 22px;
 border-radius: 4px;
 transition: color var(--transition-dur-and-func);
-transition-timing-function: var(--transition-timing)
+transition: background-color var(--transition-dur-and-func);
+transition: box-shadow var(--transition-dur-and-func);
 }
 
 .btn:focus,
@@ -680,6 +680,7 @@ transition-timing-function: var(--transition-timing)
 .text-container:hover {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: var(--transition-dur-and-func);
 }
 
 
@@ -734,7 +735,6 @@ color: var(--primary-text-color-theme-light);
   /* overflow: auto; */
   transform: translateY(100%);
   transition: transform 250ms linear;
-  transition-timing-function: var(--transition-timing);
 }
 
 .text-container-title:hover .overlay,
