@@ -10,7 +10,7 @@
   --main-color: #F5F5F5;
   --third-color: #F5F4FA;
   --icon-color: #AFB1B8;
-  --transition-dur-and-func: 250ms linear;
+  --transition-dur-and-func: 2500ms linear;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -482,8 +482,8 @@ margin-bottom: 16px;
 .clients-icon-box:focus {
   color: var(--secondary-text-color-theme-light);
   border-color: var(--secondary-text-color-theme-light);
-  transition: color var(--transition-dur-and-func);
-  transition: border-color var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func), 
+  border-color var(--transition-dur-and-func);
 }
 
 
@@ -620,9 +620,9 @@ text-align: center;
 border: none;
 padding: 6px 22px;
 border-radius: 4px;
-transition: color var(--transition-dur-and-func);
-transition: background-color var(--transition-dur-and-func);
-transition: box-shadow var(--transition-dur-and-func);
+transition: color var(--transition-dur-and-func), 
+background-color var(--transition-dur-and-func), 
+box-shadow var(--transition-dur-and-func);
 }
 
 .btn:focus,
